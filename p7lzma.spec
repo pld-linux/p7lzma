@@ -52,8 +52,8 @@ Cechy LZMA:
 
 %prep
 %setup -q -n p7zip_%{version}
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 
 %build
 cd CPP/7zip/Compress/LZMA_Alone
